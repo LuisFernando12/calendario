@@ -1,10 +1,8 @@
 /*CSS*/
 *{padding: none; margin: none; border: none;}
-/*body{
-    padding: 0%;
-    margin: 0%;
+body{
     background-color:blanchedalmond;
-}*/
+}
 .calendar_main{
     width: 450px;
     height: 400px;
@@ -33,16 +31,7 @@
     margin-right: 15px;
     
 }
-/*#prev:before {
-    border: 15px solid transparent;
-    border-right-color: #c7f464;
-    content: "";
-    top: 10px;
-    left: -70px;
-    position: absolute;
-    display: block;
 
-  }*/
 #next{
     color: #C7F464;
     cursor: pointer;
@@ -50,14 +39,7 @@
     margin-left: 15px;
 
 }
-/*#next:before {
-    border: 15px solid transparent;
-    border-left-color:#c7f464;
-    content: "";
-    top: 10px;
-    left: 40px;
-    position: absolute;
-  */}
+
 #body-calendar{
     height: 300px;
     width: 100%;

@@ -5,15 +5,11 @@
     <title>Calendario</title>
     <link rel="stylesheet" href="css/style-calendar.css">
     <script src="js/script-calendar.js"></script>
-    <script src="js/jquery.js"></script>
     <script type="text/javascript">
-          $(document).ready(function () {
-               $("#mes").html(MonthAct()); 
-          });
           document.onkeydown = ()=>Tec(event.which);
     </script>
   </head>
-  <body >
+  <body onload="MonthAct();">
     <div class="calendar_main">
         <div class="header-calendar">
           <div id="prev" onclick="Prev();">&#9664;</div>

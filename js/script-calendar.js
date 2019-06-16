@@ -1,4 +1,4 @@
-//let element = document.getElementById('body-calendar');
+
 this.date = new Date();
 this.month = date.getMonth();
 this.year = date.getFullYear();
@@ -9,7 +9,8 @@ function MonthAct(globalThis=month) {
     let mes = Months(this.month);
     GetDays(month, year);
      Year();
-    return mes;
+     // console.log(mes)
+    return document.getElementById('mes').innerHTML=mes;
 }
 function Months(dados) { 
     let months_year = new Array ("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro") ;  
@@ -122,5 +123,3 @@ function DayWeek(){
     var inicio = new Date(this.year, this.month, 1);
     return inicio.getDay() - 1 === -1 ? 6 : inicio.getDay()-1;
 }
-// element.onkeydown = (event)=> Tec(event.which);
- // body.onkeydown =(event)=> Tec(event.which);
