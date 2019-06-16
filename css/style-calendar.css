@@ -1,0 +1,134 @@
+/*CSS*/
+*{padding: none; margin: none; border: none;}
+/*body{
+    padding: 0%;
+    margin: 0%;
+    background-color:blanchedalmond;
+}*/
+.calendar_main{
+    width: 450px;
+    height: 400px;
+    background-color: #4ecdc4;
+   margin: auto;
+}
+.header-calendar{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+.title-header{
+    width: 60%;
+    height: 48px;
+    margin-top: 2px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #fff;
+}
+#prev{
+    color: #C7F464;
+    cursor: pointer;
+    font-size: 2em;
+    margin-right: 15px;
+    
+}
+/*#prev:before {
+    border: 15px solid transparent;
+    border-right-color: #c7f464;
+    content: "";
+    top: 10px;
+    left: -70px;
+    position: absolute;
+    display: block;
+
+  }*/
+#next{
+    color: #C7F464;
+    cursor: pointer;
+    font-size: 2em;
+    margin-left: 15px;
+
+}
+/*#next:before {
+    border: 15px solid transparent;
+    border-left-color:#c7f464;
+    content: "";
+    top: 10px;
+    left: 40px;
+    position: absolute;
+  */}
+#body-calendar{
+    height: 300px;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+.footer-calendar{
+    height: 50px;
+    width: 100%;
+    border-top: transparent;
+    box-sizing: border-box;
+}
+#year{
+    width: 100px;
+    height: 35px;
+    background-color: #fff;
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    line-height: 35px;
+}
+#row-days{
+    width: 100%;
+    height: 40px;
+    /*background-color: white;*/
+    display: grid;
+    grid-template-columns: 14% 14% 14% 14% 14% 14% 14%;
+    /*justify-content: center;*/
+}
+.days{
+    height: 30px;
+    width: 50px;
+    /*border: solid 0.5px black;*/
+    margin-left: 4px;
+    margin-top: 5px;
+    text-align: center;
+    line-height: 30px;
+}
+.fim_semana{
+    background-color: red;
+    color: #fff!important;
+}
+#calendar{
+    width: 100%;
+    height: 260px;
+    display: grid;
+    grid-template-columns: 14% 14% 14% 14% 14% 14% 14%;
+    box-sizing: border-box;
+}
+.days_data{
+    height: 30px;
+    width: 50px;
+    /*border: 1px solid black;*/
+    margin-left: 4px;
+    text-align: center;
+     line-height: 30px;
+}
+.days_pass{
+    height: 30px;
+    width: 50px;
+    margin-left: 4px;
+    text-align: center;
+    opacity: 0.3;
+   /* flex-direction: row-reverse;*/
+}
+.today{
+    height:35px;
+    width: 35px;
+    border-radius: 100%;
+    background-color: orange;
+    color:white;
+    text-align: center;
+}
